@@ -1,8 +1,22 @@
 # Individual AI Fluency Rubric
 
 > **Purpose**: Score an individual (or team) across five dimensions on a 1–4 scale. Use alongside the [Fluency Checklist](fluency-checklist.md) for a complete picture. This rubric is calibrated for business operations users working with Claude Desktop but can be adapted for any role or platform.
+>
+> **Relationship to the Checklist**: Each dimension below maps 1:1 to a section in the Fluency Checklist. The checklist provides observable evidence (tick boxes); this rubric converts that evidence into a scored assessment.
 
 ---
+
+## Dimensions
+
+The five dimensions below correspond directly to the five checklist sections:
+
+| Rubric Dimension | Checklist Section |
+|------------------|-------------------|
+| Prompting Quality | Section 1: Prompting Quality |
+| Output Judgement | Section 2: Output Judgement |
+| Domain Application | Section 3: Domain Application |
+| Data and Safety Awareness | Section 4: Data and Safety Awareness |
+| Team Leverage | Section 5: Team Leverage |
 
 ## Rubric
 
