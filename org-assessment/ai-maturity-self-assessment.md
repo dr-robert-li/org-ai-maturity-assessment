@@ -122,6 +122,85 @@ Recommended Focus Areas:
 
 ---
 
+## Mapping Individual Fluency to MIT CISR AI Maturity Dimensions
+
+The [Individual Fluency Rubric](../individual-assessment/fluency-rubric.md) and its two checklists (non-technical and technical) feed directly into this org-level assessment. Use the mapping below to aggregate individual domain scores into the six CISR-aligned dimensions above.
+
+> **Note on naming**: The six dimensions in this document (Strategy and Vision, Data Infrastructure, Technology and Infrastructure, Talent and Skills, Governance and Ethics, Organisational Culture) are named as in MIT CISR's AI Maturity framework. The rubric uses slightly shorter labels (e.g. "Strategy & Use Cases", "Data", "Technology & Infrastructure", "Talent & Culture", "Governance") that map 1:1.
+
+### Domain → CISR Dimension Mapping
+
+| Individual Fluency Domain (Non-Tech / Tech) | Primary CISR Dimension(s) |
+|---------------------------------------------|---------------------------|
+| Foundations — Basic Usage (both tracks) | Talent and Skills |
+| Prompting & Communication (non-tech) / Prompting & Problem Decomposition (tech) | Talent and Skills |
+| Role-Relevant Applications (non-tech) | Talent and Skills; Strategy and Vision |
+| Code & System Integration (tech) | Technology and Infrastructure; Data Infrastructure |
+| Strategy & Value in My Role (both tracks) | Strategy and Vision; Talent and Skills |
+| Working With Data (both tracks) | Data Infrastructure; Technology and Infrastructure |
+| Collaboration & Team Behaviour (non-tech) / Collaboration, Documentation & Review (tech) | Talent and Skills; Organisational Culture; Governance and Ethics |
+| Safety & Critical Thinking (non-tech) | Governance and Ethics |
+| Safety, Testing & Observability (tech) | Governance and Ethics; Technology and Infrastructure |
+
+Each rubric item in [fluency-rubric.md](../individual-assessment/fluency-rubric.md) also carries a `Feeds org dimensions:` tag for finer-grained aggregation.
+
+---
+
+## Scoring From Individual to Organisation
+
+This section explains how to combine individual rubric/checklist scores with the org-level Yes/No answers above.
+
+### 1. Numeric mapping for individual levels
+
+| Level | Score |
+|-------|:-----:|
+| Learning | 1 |
+| Competent | 2 |
+| Practitioner | 3 |
+| Power-User | 4 |
+
+### 2. Per-person domain scores
+
+For each person assessed:
+
+- For each domain in their track (non-technical or technical), calculate the average level across the checklist items in that domain.
+- Record an overall average across domains.
+
+### 3. Team / function aggregates
+
+For each team or function:
+
+- Average individuals' domain scores within the team.
+- Note which domains sit below ~2.0 (structural gap) or above ~3.0 (team strength).
+
+### 4. Org-level aggregation into CISR dimensions
+
+For each CISR dimension:
+
+1. Use the Domain → CISR mapping above to collect the relevant domain scores from all assessed individuals.
+2. Average them to get an individual-side CISR score (on a 1–4 scale).
+3. Convert the dimension's Yes/No self-assessment score (0–5) into a 1–4 scale using:
+   - 0 Yes → 1.0  
+   - 1–2 Yes → 2.0  
+   - 3–4 Yes → 3.0  
+   - 5 Yes → 4.0
+4. Take a weighted average of the individual-side score and the org-side score (default 50/50; weight individual-side higher when many people have been assessed, org-side higher when only a few have).
+
+The result is a combined CISR dimension score (1–4) that reflects both bottom-up behaviour and top-down structure.
+
+### 5. Interpreting combined CISR scores
+
+| Combined Score | Maturity Stage (per dimension) | Implication |
+|:--------------:|-------------------------------|-------------|
+| **1.0–1.5** | **Foundational** | Dimension is underdeveloped both in practice and structure. Focus on awareness, basic enablement, and first use cases. |
+| **1.6–2.5** | **Developing** | Dimension has pockets of activity; formalise what exists and close the biggest gap in the next 90 days. |
+| **2.6–3.4** | **Mature** | Dimension is working across multiple teams; focus on consistency and scaling. |
+| **3.5–4.0** | **Leading** | Dimension is a strength; leverage it to pull weaker dimensions up and drive strategic differentiation. |
+
+Use these combined scores to prioritise investment in the [90-Day Adoption Roadmap](../roadmap/90-day-adoption-roadmap.md).
+
+---
+
 ## Dimension-by-Dimension Recommendations
 
 Use this guide to translate scores into action.

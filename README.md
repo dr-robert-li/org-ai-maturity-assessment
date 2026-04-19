@@ -12,9 +12,10 @@ A comprehensive set of documentation, frameworks, and tools to help organisation
 ## Repository Structure
 
 ```
-├── individual-assessment/       # Individual fluency rubric and checklist
-│   ├── fluency-checklist.md     # Tick-box checklist for assessing individual Claude fluency
-│   └── fluency-rubric.md        # Scored rubric (1–4) across five dimensions
+├── individual-assessment/       # Individual fluency rubric and checklists (two tracks)
+│   ├── fluency-rubric.md                  # Rubric: Learning / Competent / Practitioner / Power-User, non-tech + tech tracks
+│   ├── fluency-checklist.md               # Non-technical checklist (sales, marketing, CS, ops, HR, finance, non-tech PM)
+│   └── fluency-checklist-technical.md     # Technical checklist (SWE, SRE, data/ML, designers, technical PM)
 │
 ├── org-assessment/              # Organisation-wide maturity assessment
 │   └── ai-maturity-self-assessment.md   # MIT CISR framework — 30 yes/no questions
@@ -42,7 +43,12 @@ A comprehensive set of documentation, frameworks, and tools to help organisation
 
 ### For Individual Assessment
 
-Start with `individual-assessment/fluency-checklist.md` to tick off what the person is already doing. Then score them using `individual-assessment/fluency-rubric.md` to identify specific gaps and generate targeted recommendations.
+Choose the checklist that matches the person's role:
+
+- Non-technical roles (sales, marketing, CS, ops, HR, finance, non-technical PM) → `individual-assessment/fluency-checklist.md`
+- Technical roles (SWE, SRE, data/ML, designers, technical PM) → `individual-assessment/fluency-checklist-technical.md`
+
+Tick off what the person is already doing, then use `individual-assessment/fluency-rubric.md` to assign a level (Learning / Competent / Practitioner / Power-User) per domain, identify specific gaps, and generate targeted recommendations. Domain scores roll up into the MIT CISR dimensions in `org-assessment/ai-maturity-self-assessment.md`.
 
 ### For Organisation-Wide Assessment
 
