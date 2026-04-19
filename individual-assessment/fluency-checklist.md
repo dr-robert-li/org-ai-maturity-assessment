@@ -1,86 +1,123 @@
-# Individual AI Fluency Checklist
+# Individual AI Fluency Checklist — Non-Technical
 
-> **Purpose**: Use this checklist to assess what an individual is currently doing (or has done) with Claude Desktop. Tick items off during a discovery conversation. This checklist is calibrated for business operations users (non-API, non-developer profile) but can be adapted for technical roles.
+> **Purpose**: Use this checklist to assess what a non-technical user is currently doing (or has done) with Claude. Tick items off during a discovery conversation or self-assessment. This checklist is calibrated for business roles (sales, marketing, CS, ops, HR, finance, non-technical PMs).
 >
-> **Relationship to the Rubric**: The five sections below map directly to the five dimensions in the [Fluency Rubric](fluency-rubric.md). Use checked item counts per section to inform your rubric score for each dimension.
+> **Companion checklist**: For engineers, data/ML, SRE, designers, and technical PMs, use the [Technical Fluency Checklist](fluency-checklist-technical.md).
+>
+> **Relationship to the Rubric**: Each domain below maps 1:1 to a domain in the [Fluency Rubric](fluency-rubric.md). Items mirror the rubric's "What good looks like" statements. For each item, use the standard levels:
+>
+> - **Learning** → Score 1
+> - **Competent** → Score 2
+> - **Practitioner** → Score 3
+> - **Power-User** → Score 4
 
 ---
 
-## Section 1: Prompting Quality
+## Levels
 
-- [ ] Writes prompts with clear instructions (not just one-line questions)
-- [ ] Includes role, task, context, or format guidance in prompts (e.g., "Act as a RevOps analyst…", "Format the output as a table…")
-- [ ] Has iterated on a prompt — refined it after a poor first response
-- [ ] Has used multi-turn conversation to build on previous outputs across multiple messages
-- [ ] Has tried asking Claude to critique its own output or offer alternatives
+- **Learning**: Just starting. Needs examples, checklists, and guidance.
+- **Competent**: Uses Claude regularly for common tasks; follows patterns from others.
+- **Practitioner**: Designs and improves workflows; shares prompts/skills.
+- **Power-User**: Champions AI use on the team; codifies and teaches best practice.
 
-**Rubric mapping**: 0–1 checked → Score 1 (Novice) | 2 checked → Score 2 (Developing) | 3–4 checked → Score 3 (Proficient) | 5 checked → Score 4 (Fluent)
+Tick every statement that is true of the person today. A person's level in each domain is determined by the highest level at which all (or nearly all) items are checked.
 
-## Section 2: Output Judgement
+---
 
-- [ ] Does not treat Claude outputs as final without review
-- [ ] Has caught at least one incorrect or misleading output and corrected it
-- [ ] Can describe what Claude is good at vs. where it makes mistakes
-- [ ] Has experienced a hallucination or error and knows how to handle it (verify, re-prompt, push back)
-- [ ] Understands that Claude does not have access to their live CRM or systems (unless integrated)
+## Section 1: Foundations — Basic Usage (Non-Technical)
 
-**Rubric mapping**: 0–1 checked → Score 1 (Novice) | 2 checked → Score 2 (Developing) | 3–4 checked → Score 3 (Proficient) | 5 checked → Score 4 (Fluent)
+- [ ] **Learning** – Logs into and uses Claude Desktop at least a few times per week for real work tasks (not just tests).
+- [ ] **Learning** – Understands the difference between a one-off chat and a Project and uses Projects for ongoing work.
+- [ ] **Learning** – Has created at least one Artifact (document, table, checklist, plan) for their own work using Claude.
+- [ ] **Competent** – Can explain what Claude is good at in their role and where it tends to make mistakes (facts, numbers, legal advice, etc.).
 
-## Section 3: Domain Application
+---
 
-> Adapt the examples to the individual's role. The examples below are for Revenue Operations.
+## Section 2: Prompting & Communication (Non-Technical)
 
-- [ ] Used Claude to draft, summarise, or restructure a domain document (e.g., SOP, territory plan, commission policy)
-- [ ] Used Claude to analyse or interpret data (e.g., paste in a CSV or table and ask for insights)
-- [ ] Used Claude to build a template (e.g., deal review template, pipeline health scorecard)
-- [ ] Used Claude to support cross-functional communication (e.g., translate a technical process into exec language)
-- [ ] Used Claude in a reporting or review prep workflow (e.g., QBR prep, weekly pipeline summary)
+- [ ] **Learning** – Writes prompts with clear instructions (not just one-line questions), including role, task, and desired format.
+- [ ] **Competent** – Iterates on a prompt after a poor first response rather than accepting it.
+- [ ] **Competent** – Uses multi-turn conversation to refine outputs across several messages.
+- [ ] **Practitioner** – Asks Claude to critique its own output or propose alternatives and uses that critique.
+- [ ] **Power-User** – Captures their best prompts in a shared team library (Notion, Docs, Slack canvas).
 
-**Rubric mapping**: 0–1 checked → Score 1 (Novice) | 2 checked → Score 2 (Developing) | 3–4 checked → Score 3 (Proficient) | 5 checked → Score 4 (Fluent)
+---
 
-## Section 4: Data and Safety Awareness
+## Section 3: Role-Relevant Applications (Non-Technical)
 
-- [ ] Is aware of data/privacy considerations when pasting client or revenue data
-- [ ] Has a loose mental model for what data is safe to paste into Claude vs. not
-- [ ] Follows a consistent practice for handling sensitive data (anonymisation, redaction, or avoidance)
-- [ ] Has discussed data handling expectations with their team or manager
-- [ ] Has documented or contributed to a written data handling guideline for AI tools
+- [ ] **Learning** – Has used Claude to draft, summarise, or restructure a real work document (policy, brief, email, agenda, review note).
+- [ ] **Competent** – Has used Claude to analyse or interpret structured information (CSV, table, dashboard screenshot, CRM/HRIS export) and cross-checked numbers.
+- [ ] **Competent** – Has used Claude to build or improve a template and reused it in real work at least twice.
+- [ ] **Practitioner** – Has used Claude to support cross-functional communication (exec summary, audience-adapted rewrite).
+- [ ] **Practitioner** – Uses Claude in a recurring reporting or review workflow (weekly KPI recap, customer health review, QBR prep) with metric checks before sharing.
+- [ ] **Power-User** – Has redesigned a team workflow end-to-end with Claude embedded and documented it for others.
 
-**Rubric mapping**: 0–1 checked → Score 1 (Novice) | 2 checked → Score 2 (Developing) | 3–4 checked → Score 3 (Proficient) | 5 checked → Score 4 (Fluent)
+---
 
-## Section 5: Team Leverage
+## Section 4: Strategy & Value in My Role (Non-Technical)
 
-- [ ] Has shared a Claude output with a teammate or stakeholder
-- [ ] Has discussed with the team when to use Claude vs. not
-- [ ] Has taught or shown a colleague a prompt technique
-- [ ] Team has at least one shared or repeatable prompt (even informal)
-- [ ] Team is building repeatable Claude-assisted workflows or a shared prompt library
+- [ ] **Competent** – Can name at least 1–2 tasks where Claude has delivered meaningful value in their role (time saved, quality improved).
+- [ ] **Competent** – Can clearly distinguish between low-value and high-value AI use cases for their role.
+- [ ] **Practitioner** – Has suggested at least one new AI use case aligned with team or company goals to their manager or team.
+- [ ] **Power-User** – Has brought a concrete, written AI proposal (problem → use case → impact → risk) to a team or leadership forum.
 
-**Rubric mapping**: 0–1 checked → Score 1 (Novice) | 2 checked → Score 2 (Developing) | 3–4 checked → Score 3 (Proficient) | 5 checked → Score 4 (Fluent)
+---
+
+## Section 5: Working With Data (Non-Technical)
+
+- [ ] **Competent** – Knows which internal reports/dashboards are the source of truth for the key metrics they ask Claude about.
+- [ ] **Competent** – Does basic sense checks on data-related outputs from Claude against the original source.
+- [ ] **Practitioner** – Can explain in simple terms what data Claude has seen and what it has not (no automatic access to internal systems unless integrated).
+- [ ] **Power-User** – Has helped write or maintain a team-level guideline on what data is and is not safe to share with Claude.
+
+---
+
+## Section 6: Collaboration & Team Behaviour (Non-Technical)
+
+- [ ] **Learning** – Has shared a Claude output with a teammate or stakeholder and is transparent about AI-assisted work.
+- [ ] **Competent** – Has discussed with the team when to use Claude vs not and participated in "where AI should/should not be used" conversations.
+- [ ] **Practitioner** – Has taught or shown a colleague at least one prompt technique or workflow.
+- [ ] **Practitioner** – Contributes to a shared team prompt/skill library or set of conventions.
+- [ ] **Power-User** – Drives team AI adoption (runs show-and-tells, maintains the library, named go-to person for AI).
+
+---
+
+## Section 7: Safety & Critical Thinking (Non-Technical)
+
+- [ ] **Learning** – Does not treat Claude outputs as final; always reviews and edits before sending/sharing.
+- [ ] **Learning** – Has caught at least one incorrect or misleading output and corrected it.
+- [ ] **Competent** – Understands that Claude does not see live internal systems unless explicitly integrated.
+- [ ] **Competent** – Can give concrete examples of what they would not paste into Claude (e.g. full contracts, payroll, customer PII) and how to anonymise/aggregate instead.
+- [ ] **Practitioner** – Recognises high-stakes or sensitive contexts (performance reviews, disciplinary actions, legal/financial advice) and escalates appropriately.
+- [ ] **Power-User** – Has contributed to a written team norm or one-pager on data handling or ethical AI use.
 
 ---
 
 ## Scoring Summary
 
-| Section | Items Checked | Rubric Score (1–4) |
-|---------|:------------:|:------------------:|
-| 1. Prompting Quality | ___ / 5 | |
-| 2. Output Judgement | ___ / 5 | |
-| 3. Domain Application | ___ / 5 | |
-| 4. Data and Safety Awareness | ___ / 5 | |
-| 5. Team Leverage | ___ / 5 | |
-| **Total** | **___ / 25** | **___ / 20** |
+For each section, record the highest level at which all (or nearly all) items are ticked. Convert to the 1–4 scale using Learning = 1, Competent = 2, Practitioner = 3, Power-User = 4.
 
-### Interpreting the Rubric Total
+| Section | Items Checked | Level (L/C/P/PU) | Score (1–4) |
+|---------|:------------:|:----------------:|:-----------:|
+| 1. Foundations — Basic Usage | ___ / 4 | | |
+| 2. Prompting & Communication | ___ / 5 | | |
+| 3. Role-Relevant Applications | ___ / 6 | | |
+| 4. Strategy & Value in My Role | ___ / 4 | | |
+| 5. Working With Data | ___ / 4 | | |
+| 6. Collaboration & Team Behaviour | ___ / 5 | | |
+| 7. Safety & Critical Thinking | ___ / 6 | | |
+| **Average** | | | **___/4** |
 
-| Total Rubric Score | Stage | Interpretation |
-|:------------------:|-------|----------------|
-| **16–20** | **Fluent** | Ready for advanced use cases, API/integration conversations, and internal champion role |
-| **11–15** | **Proficient** | Solid foundation with targeted skill gaps to close |
-| **6–10** | **Developing** | Consistent daily use needed, structured learning recommended |
-| **5** | **Novice** | Needs onboarding before assessing further |
+### Interpreting the Average
 
-> See the [Fluency Rubric](fluency-rubric.md) for detailed dimension descriptors and tailored recommendations by score.
+| Average Score | Stage | Interpretation |
+|:-------------:|-------|----------------|
+| **3.5–4.0** | **Power-User** | Ready for champion / enablement role. Involve in org-level strategy and training. |
+| **2.5–3.4** | **Practitioner** | Strong individual user, designs workflows, shares with peers. |
+| **1.5–2.4** | **Competent** | Uses Claude regularly on common tasks; ready to level up into workflow design. |
+| **1.0–1.4** | **Learning** | Needs structured onboarding before assessing further. |
+
+> See the [Fluency Rubric](fluency-rubric.md) for detailed descriptors, "What good looks like" examples, and recommendations by level.
 
 ---
 
@@ -92,6 +129,7 @@ _Use this space to capture observations, quotes, or context from the assessment 
 [Date]:
 [Assessor]:
 [Subject]:
+[Track]: Non-Technical
 
 Observations:
 
