@@ -80,7 +80,7 @@ All files are in Markdown format. They can be:
 
 **Proprietary — All rights reserved.**
 
-Copyright © 2026 Dr. Robert Li and Australia GTM.
+Copyright © 2026 Dr. Robert Li.
 
 This repository is not open-source. No licence to use, copy, modify, distribute, or create derivative works is granted except as expressly permitted in writing by the Owners. See [LICENSE](LICENSE) for the full terms.
 
