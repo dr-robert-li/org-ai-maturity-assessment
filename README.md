@@ -1,7 +1,5 @@
 # Organisational AI Maturity Assessment & Adoption Toolkit
 
-> **Branch variant**: This is the `refactor/stricter-scoring-and-mit-cisr-alignment` variant. It uses (a) depth scoring (0/1/2 per question, max 60) instead of binary Yes/No, (b) prerequisite gates on Data Infrastructure and Governance, and (c) renamed individual tiers (`Learner / Practitioner / Multiplier / Champion`) and MIT CISR-aligned org stage names. The `main` branch retains the original generous scoring. See [CHANGELOG.md](CHANGELOG.md) for rationale.
-
 A comprehensive set of documentation, frameworks, and tools to help organisations develop fluency in — and adopt — AI tooling as quickly as possible. Largely centred on the **Anthropic Claude** ecosystem, though the assessment frameworks are platform-agnostic.
 
 ## Who Is This For?
@@ -52,13 +50,11 @@ Choose the checklist that matches the person's role:
 
 Tick off what the person is already doing, then use `individual-assessment/fluency-rubric.md` to assign a level (Learner / Practitioner / Multiplier / Champion) per domain, identify specific gaps, and generate targeted recommendations. Domain scores roll up into the MIT CISR dimensions in `org-assessment/ai-maturity-self-assessment.md`.
 
-> **What changed in this variant**: The two middle tiers were renamed to remove semantic blur — what used to be "Competent" is now "Practitioner", and what used to be "Practitioner" is now "Multiplier". "Power-User" became "Champion" to reflect strategic capability rather than tool intensity.
-
 ### For Organisation-Wide Assessment
 
 Use `org-assessment/ai-maturity-self-assessment.md` to survey the organisation across six dimensions. This is best done as a listening tour — interview 5–10 people across departments and aggregate scores.
 
-**Scoring mechanic (this variant):** Each of the 30 questions is scored on a 0/1/2 depth scale:
+**Scoring mechanic:** Each of the 30 questions is scored on a 0/1/2 depth scale:
 
 - **0 = No** — not in place
 - **1 = Partial** — exists but inconsistent or undocumented (default if your first instinct is "yes, but…")
