@@ -1,5 +1,7 @@
 # Organisational AI Maturity Assessment & Adoption Toolkit
 
+> **Branch variant**: This is the `refactor/stricter-scoring-and-mit-cisr-alignment` variant. It uses (a) depth scoring (0/1/2 per question, max 60) instead of binary Yes/No, (b) prerequisite gates on Data Infrastructure and Governance, and (c) renamed individual tiers (`Learner / Practitioner / Multiplier / Champion`) and MIT CISR-aligned org stage names. The `main` branch retains the original generous scoring. See [CHANGELOG.md](CHANGELOG.md) for rationale.
+
 A comprehensive set of documentation, frameworks, and tools to help organisations develop fluency in — and adopt — AI tooling as quickly as possible. Largely centred on the **Anthropic Claude** ecosystem, though the assessment frameworks are platform-agnostic.
 
 ## Who Is This For?
@@ -13,12 +15,12 @@ A comprehensive set of documentation, frameworks, and tools to help organisation
 
 ```
 ├── individual-assessment/       # Individual fluency rubric and checklists (two tracks)
-│   ├── fluency-rubric.md                  # Rubric: Learning / Competent / Practitioner / Power-User, non-tech + tech tracks
+│   ├── fluency-rubric.md                  # Rubric: Learner / Practitioner / Multiplier / Champion, non-tech + tech tracks
 │   ├── fluency-checklist.md               # Non-technical checklist (sales, marketing, CS, ops, HR, finance, non-tech PM)
 │   └── fluency-checklist-technical.md     # Technical checklist (SWE, SRE, data/ML, designers, technical PM)
 │
 ├── org-assessment/              # Organisation-wide maturity assessment
-│   └── ai-maturity-self-assessment.md   # MIT CISR framework — 30 yes/no questions
+│   └── ai-maturity-self-assessment.md   # MIT CISR-aligned — 30 questions, 0/1/2 depth scoring (max 60), prerequisite gates
 │
 ├── adoption-templates/          # Ready-to-use templates for running adoption programs
 │   ├── pilot-program-charter.md         # Structured charter for AI pilot projects
@@ -48,11 +50,28 @@ Choose the checklist that matches the person's role:
 - Non-technical roles (sales, marketing, CS, ops, HR, finance, non-technical PM) → `individual-assessment/fluency-checklist.md`
 - Technical roles (SWE, SRE, data/ML, designers, technical PM) → `individual-assessment/fluency-checklist-technical.md`
 
-Tick off what the person is already doing, then use `individual-assessment/fluency-rubric.md` to assign a level (Learning / Competent / Practitioner / Power-User) per domain, identify specific gaps, and generate targeted recommendations. Domain scores roll up into the MIT CISR dimensions in `org-assessment/ai-maturity-self-assessment.md`.
+Tick off what the person is already doing, then use `individual-assessment/fluency-rubric.md` to assign a level (Learner / Practitioner / Multiplier / Champion) per domain, identify specific gaps, and generate targeted recommendations. Domain scores roll up into the MIT CISR dimensions in `org-assessment/ai-maturity-self-assessment.md`.
+
+> **What changed in this variant**: The two middle tiers were renamed to remove semantic blur — what used to be "Competent" is now "Practitioner", and what used to be "Practitioner" is now "Multiplier". "Power-User" became "Champion" to reflect strategic capability rather than tool intensity.
 
 ### For Organisation-Wide Assessment
 
 Use `org-assessment/ai-maturity-self-assessment.md` to survey the organisation across six dimensions. This is best done as a listening tour — interview 5–10 people across departments and aggregate scores.
+
+**Scoring mechanic (this variant):** Each of the 30 questions is scored on a 0/1/2 depth scale:
+
+- **0 = No** — not in place
+- **1 = Partial** — exists but inconsistent or undocumented (default if your first instinct is "yes, but…")
+- **2 = Yes — Evidenced** — documented and consistently practised; concrete artefacts exist
+
+Maximum score is 60. Stage names follow the [MIT CISR Enterprise AI Maturity Model](https://cisr.mit.edu/publication/2024_1201_EnterpriseAIMaturityModel_WeillWoernerSebastian) (Stage 1: Experiment and Prepare, Stage 2: Build Pilots and Capabilities, Stage 3: Develop AI Ways of Working, Stage 4: AI Future Ready). Bands are intentionally asymmetric to reflect that Stage 2 → Stage 3 is the hardest crossing.
+
+**Prerequisite gates also apply.** Total score alone does not determine stage:
+
+- To reach Stage 3, both Data Infrastructure and Governance dimensions must score ≥ 4/10. If either fails, the result is capped at Stage 2 regardless of total.
+- To reach Stage 4, all six dimensions must score ≥ 7/10. If any fails, the result is capped at Stage 3.
+
+When a gate fires, surface it explicitly in the report so the structural blocker is visible to stakeholders.
 
 ### For Running an Adoption Program
 

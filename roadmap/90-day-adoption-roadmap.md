@@ -48,15 +48,15 @@ Instead, we:
 | Agree on the guideline with the team — does not need legal sign-off to start; a team-agreed norm is enough | Team Lead | Acknowledged by all users |
 | Clarify tool landscape — when to use Claude Desktop vs. chat integrations vs. Excel/PowerPoint add-ins | Consultant | Tool selection guidance document |
 
-### 1.2 Identify Power-Users and Run a Listening Tour
+### 1.2 Identify Champions and Run a Listening Tour
 
 | Action | Owner | Deliverable |
 |--------|-------|-------------|
-| Identify who in the org is already using Claude (formal or informal) across both non-technical and technical roles | AI Champion | List of current users with estimated fluency level (Learning / Competent / Practitioner / Power-User) |
+| Identify who in the org is already using Claude (formal or informal) across both non-technical and technical roles | AI Champion | List of current users with estimated fluency level (Learner / Practitioner / Multiplier / Champion) |
 | Conduct individual fluency assessments using the [rubric](../individual-assessment/fluency-rubric.md) plus the appropriate checklist — [non-technical](../individual-assessment/fluency-checklist.md) or [technical](../individual-assessment/fluency-checklist-technical.md) — for 3–5 key users per track | Consultant | Completed assessment worksheets per track |
-| Run the [Org Maturity Self-Assessment](../org-assessment/ai-maturity-self-assessment.md) across departments | AI Champion + Consultant | Aggregate maturity score and dimension breakdown |
-| Identify 2–3 Power-Users (and high Practitioners) who can become internal champions | Consultant | Named champions with buy-in |
-| Invite identified Power-Users and high Practitioners to choose 1–2 workflows each to improve with Claude | Champions | Self-chosen local experiments (no mandates) |
+| Run the [Org Maturity Self-Assessment](../org-assessment/ai-maturity-self-assessment.md) across departments — depth-scored (0/1/2 per question, max 60), with prerequisite gates on Data Infrastructure and Governance | AI Champion + Consultant | Aggregate maturity score, dimension breakdown, and any gate-blocker findings |
+| Identify 2–3 Champions (and high Multipliers) who can become internal AI champions | Consultant | Named champions with buy-in |
+| Invite identified Champions and high Multipliers to choose 1–2 workflows each to improve with Claude | Champions | Self-chosen local experiments (no mandates) |
 
 ### 1.3 Set Up Sharing Infrastructure
 
@@ -72,7 +72,7 @@ Instead, we:
 | Action | Owner | Deliverable |
 |--------|-------|-------------|
 | Activate features users have not yet tried (e.g., Claude Excel add-in, PowerPoint, Google Workspace integration) | Consultant | Demo session completed |
-| Show each power user one new Claude capability relevant to their workflow | Consultant | Individual recommendations delivered |
+| Show each Champion one new Claude capability relevant to their workflow | Consultant | Individual recommendations delivered |
 | Each champion uses Claude in at least one recurring task this month | Champions | Usage log or self-report |
 
 ### Phase 1 Exit Criteria
@@ -82,7 +82,8 @@ Instead, we:
 - [ ] Organisation maturity score calculated
 - [ ] Shared channel active with at least 2 contributors
 - [ ] Prompt library started with 5+ entries
-- [ ] Each identified Power-User / high Practitioner has chosen 1–2 local workflows to improve with Claude
+- [ ] Each identified Champion / high Multiplier has chosen 1–2 local workflows to improve with Claude
+- [ ] Any prerequisite-gate blockers (Data Infrastructure or Governance below threshold) identified and assigned an owner
 
 ---
 
@@ -127,7 +128,7 @@ Instead, we:
 | Action | Owner | Deliverable |
 |--------|-------|-------------|
 | Pilot the [Weekly Victory Sharing Circle](../adoption-templates/victory-journal.md) — 30 min weekly, champions share wins | AI Champion | 4 sessions completed |
-| Host the first show-and-tell from a power user (5–10 min demo of their best Claude workflow) | Champion | Session completed |
+| Host the first show-and-tell from a Champion (5–10 min demo of their best Claude workflow) | Champion | Session completed |
 
 ### Phase 2 Exit Criteria
 
@@ -176,7 +177,7 @@ Instead, we:
 | Action | Owner | Deliverable |
 |--------|-------|-------------|
 | Re-run the [Organisation Maturity Self-Assessment](../org-assessment/ai-maturity-self-assessment.md) and compare to Day 1 baseline | Consultant | Before/after comparison |
-| Re-assess individual fluency for champions (across both tracks) and compare to initial levels | Consultant | Progress report showing level transitions (Learning → Competent → Practitioner → Power-User) |
+| Re-assess individual fluency for champions (across both tracks) and compare to initial levels | Consultant | Progress report showing level transitions (Learner → Practitioner → Multiplier → Champion) |
 | Populate the MIT CISR AI maturity view using combined individual + org scores (per the scoring guidance in the org assessment) | Consultant | CISR dimension scorecard |
 | Identify 2–3 strategic focus areas for the next 90 days (e.g. raise non-technical Safety, level up technical Code & System Integration, improve Data literacy) and align with org-level initiatives (training, connectors, policies) | Team Lead + Consultant | Next-quarter focus areas |
 | Decide on a cadence (e.g. every 6–12 months) to re-run individual assessments and track progress at both individual and CISR dimension levels | Team Lead | Recurring review cadence |
@@ -196,14 +197,16 @@ Instead, we:
 
 ## Post-90-Day: What Comes Next
 
-Based on Day 90 maturity scores, the typical next moves are:
+Based on Day 90 maturity scores (depth-scored, max 60), the typical next moves are:
 
-| Maturity Stage | Recommended Next Focus |
-|----------------|------------------------|
-| **Foundational (0–8)** | Continue Phase 1–2 activities. Focus on individual literacy and governance basics. Consider whether the right people are championing adoption. |
-| **Developing (9–16)** | Focus on cross-departmental expansion. Start a formal training programme. Evaluate Claude Team/Enterprise plans for better governance and Projects. |
-| **Mature (17–24)** | Invest in custom skills and integrations. Explore API-driven automation. Formalise a Centre of Excellence or AI Guild. Begin advanced use cases (agents, MCP servers). |
-| **Leading (25–30)** | Shift to frontier innovation. Contribute to internal knowledge assets. Build proprietary skills. Evaluate competitive differentiation through AI. |
+| Maturity Stage | Score | Recommended Next Focus |
+|----------------|:-----:|------------------------|
+| **Stage 1: Experiment and Prepare** | 0–20 | Continue Phase 1–2 activities. Focus on individual literacy and governance basics. Consider whether the right people are championing adoption. |
+| **Stage 2: Build Pilots and Capabilities** | 21–38 | Focus on cross-departmental expansion. Start a formal training programme. Evaluate Claude Team/Enterprise plans for better governance and Projects. **Note: still in net-investment phase per MIT CISR.** |
+| **Stage 3: Develop AI Ways of Working** | 39–52 | Invest in custom skills and integrations. Explore API-driven automation. Formalise a Centre of Excellence or AI Guild. Begin advanced use cases (agents, MCP servers). *This is where positive growth/profit kicks in.* |
+| **Stage 4: AI Future Ready** | 53–60 | Shift to frontier innovation. Contribute to internal knowledge assets. Build proprietary skills. Evaluate competitive differentiation through AI. Only ~7% of enterprises reach here. |
+
+> If a prerequisite gate fired (Data Infrastructure < 4/10 capping at Stage 2, or any dimension < 7/10 capping at Stage 3), prioritise closing the gating dimension before investing in the next-stage activities.
 
 ---
 
