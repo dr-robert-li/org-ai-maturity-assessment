@@ -158,6 +158,15 @@ For the official specification on how skills work, see [agentskills.io](https://
 | **Best for** | Anyone looking for a specific skill. Searchable directory covering every domain. |
 | **Technical level** | All levels (for browsing); Developer (for installation) |
 
+### Tessl Registry
+
+| | |
+|---|---|
+| **URL** | [tessl.io/registry](https://tessl.io/registry) |
+| **What it does** | A skill-specific package manager and discovery platform for agent skills. Unlike browsing GitHub — which is general-purpose and gives no signal beyond stars and a README — Tessl treats each skill as a versioned package with automated evaluations (quality, impact uplift vs. baseline, and Snyk-powered security scanning) on every publish. Versioning lets developers pin to specific releases and update intentionally, rather than tracking a moving `main` branch. Skills can be installed via CLI, e.g., `npx tessl i github:<owner>/<repo> --skill <name>`. |
+| **Best for** | Teams that need reproducible, evaluated skill installs rather than ad-hoc GitHub clones. Useful when you want signal on whether a skill actually improves agent behaviour, and when version stability across environments matters. |
+| **Technical level** | Developer |
+
 ---
 
 ## Choosing the Right Tools
